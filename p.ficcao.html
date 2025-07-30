@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanguis Arcanum</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+<header id="blood-header">
+  <img src="logo2.jpg" class="logo" alt="Sanguis Arcanum">
+</header>
+
+
+<script>
+function createDrop() {
+  const header = document.getElementById("blood-header");
+  const drop = document.createElement("div");
+  drop.classList.add("drop");
+
+  // posição aleatória
+  drop.style.left = Math.random() * 100 + "%";
+
+  // tamanho aleatório
+  const size = Math.random() * 8 + 5;
+  drop.style.width = size + "px";
+  drop.style.height = size * 2 + "px";
+
+  header.appendChild(drop);
+
+  // animação mais rápida
+  drop.animate([
+    { top: "100px", opacity: 1 },
+    { top: "300px", opacity: 0 }
+  ], {
+    duration: Math.random() * 2000 + 1500, // entre 1.5s e 3.5s
+    easing: "ease-in",
+    iterations: 1
+  });
+
+  // remover após cair
+  setTimeout(() => drop.remove(), 2500);
+}
+
+// criar gotas com mais frequência
+setInterval(createDrop, 400);
+</script>
+
+  <div class="content">
+    <nav class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#inicio">🩸 Início</a></li>
+        <li><a href="#ficcao"> 🩸 Vampiros na Ficção</a></li>
+        <!--<li><a href="#origens">📜 Origens das Crenças</a></li>
+        <li><a href="#ficcao">🎭 Ficção Moderna</a></li>-->
+      </ul>
+    </nav>
+
+    <main class="main">
+      <section id="ficcao">
+        <h2> 🩸Vampiros na Ficção: Metáforas Vivas do Nosso Tempo</h2>
+        <p> A figura do vampiro atravessou séculos, mas na fase moderna ela se tornou mais simbólica, profunda e complexa. Mais do que uma criatura noturna que se alimenta de sangue, o vampiro moderno se configura como um espelho dos dilemas humanos — sociais, existenciais e até tecnológicos.</p>
+              
+        <figure>
+        <img src="ilust1.png" alt="Ilustração de um vampiro e ícones simbólicos atrás de sua cabeça" height="700" style="display: block; margin: 0 auto;"/>
+        <figcaption>Vampiro moderno com capa preta</figcaption>
+        </figure>   
+
+            <h3>Arquétipo em Transformação</h3>
+              <p>O vampiro contemporâneo não representa apenas o medo do desconhecido, mas também nossos próprios impulsos reprimidos, desejos ambíguos e contradições internas. Ele já não é apenas um ser externo que ameaça — é parte de nós. É símbolo da tensão entre o instinto e a razão, entre o controle e a entrega. Na modernidade, esse arquétipo assume uma carga psicológica mais rica: representa a busca por sentido, a angústia da eternidade, a culpa e o desejo de redenção. Ele deixa de ser um monstro absoluto para se tornar uma figura cinzenta, marcada pela dúvida moral.</p>
+            
+            <h3>Vampiros como Expressão de Identidade e Alteridade</h3>
+              <p>Na sociedade atual, marcada pela diversidade de vozes e pela complexidade identitária, os vampiros são utilizados como metáforas de marginalidade, de não-pertencimento e de transgressão. Eles podem encarnar o que escapa às normas, desafiando fronteiras de gênero, cultura, corpo e comportamento.</p>
+              <p>Sua condição de “entre mundos” — nem vivo, nem morto — permite que representem subjetividades fluidas e experiências liminares. Isso os torna figuras potentes para refletir sobre exclusão, aceitação, máscaras sociais e o desejo de ser visto por quem se é de fato.</p>
+            
+              <h3>Consumo, Juventude e Imortalidade</h3>
+                <p>O vampiro moderno também dialoga com os excessos da era digital e consumista. Ele consome incessantemente, evita o envelhecimento e se alimenta da vitalidade alheia — uma imagem que se conecta a questões como dependência emocional, vício em juventude, busca por performance contínua e esgotamento coletivo.</p>
+                <p>Nesse sentido, o vampiro pode ser lido como uma crítica simbólica às relações predatórias, às pressões sociais por produtividade eterna e à superficialidade de uma sociedade obcecada por aparência e permanência.</p>
+            
+              <h3>Erotismo, Solidão e a Busca por Conexão</h3>
+                <p>A presença do vampiro na modernidade também explora camadas emocionais profundas, como a solidão, a sede de intimidade, a dificuldade de confiar, o medo de se entregar. Sua condição o impede de se integrar plenamente à sociedade, tornando-se um retrato da angústia moderna: querer conexão, mas não saber como alcançá-la sem ferir ou ser ferido.</p>
+                <p>A simbologia do sangue — troca vital e íntima — acentua o vampiro como figura de desejo, mas também de risco, de entrega e vulnerabilidade.</p>
+            
+              <h3>Um Símbolo Vivo da Complexidade Humana</h3>
+                <p>Na fase moderna, o vampiro deixa de ser apenas um monstro folclórico e passa a ocupar um lugar central como símbolo das contradições humanas. Ele é sedutor e perigoso, solitário e carente, ético e impulsivo. Carrega a escuridão dentro de si, mas deseja a luz.</p>
+                <p>Essa complexidade é o que mantém sua relevância. O vampiro sobrevive porque é mutável — ele sangra os medos, os conflitos e os desejos de cada geração, sem nunca perder o apelo que nos atrai para a escuridão.</p>
+        </section>
+
+  <hr>
+      <section id="literatura">
+        <h2>📜 Vampiros na Literatura: Sangue, Simbolismo e Subversão</h2>
+
+          <p>A literatura foi um dos primeiros territórios a eternizar o vampiro como figura simbólica. Muito antes da explosão midiática e cinematográfica, as páginas escritas já moldavam o imaginário coletivo em torno dessas criaturas sombrias — que transitam entre o erótico e o monstruoso, entre o sublime e o abjeto.</p>
+          <p>A presença do vampiro na literatura não é apenas fruto do medo, mas também <strong>um veículo para explorar os limites da moralidade, da identidade, do desejo e do poder</strong>. Ele aparece como metáfora para tensões sociais (sexo, doença, religião, colonização), mas também como personagem de profundidade psicológica e filosófica.</p>
+          <p>Ao longo dos séculos, autores de diferentes estilos e épocas revisitaram o mito, atualizando-o conforme os dilemas de seu tempo. A cada obra, o vampiro se reinventa — ora como vilão, ora como vítima, ora como anti-herói. Mas sempre deixando marcas profundas na mente dos leitores.</p>
+
+                  <figure>
+        <img src="ilust2.png" alt="Ilustração de uma vampira" height="700" style="display: block; margin: 0 auto;"/>
+        <figcaption>Vampira caminhando pelas ruas de uma cidade</figcaption>
+        </figure>
+
+            <h3> 📚 Obras Literárias Essenciais Sobre Vampiros</h3>
+
+              <div class="obra">
+                <strong>1. "O Vampiro" (1819) – John Polidori</strong>
+                <ul>
+                  <li> Considerada a <strong>primeira obra de ficção moderna sobre vampiros</strong>.</li>
+                  <li>Cria o arquétipo do vampiro aristocrático e sedutor.</li>
+                  <li>Influenciou diretamente a construção de personagens como Drácula.</li>
+                </ul>
+              </div>
+
+              <div class="obra">
+                <strong>2. "Carmilla" (1872)  Sheridan Le Fanu</strong>
+                <ul>
+                  <li> Uma das primeiras representações de vampiras femininas.</li>
+                  <li>Temas como lesbianismo, repressão sexual e morbidez são centrais.</li>
+                  <li>Atmosfera gótica envolvente e pioneira em muitos aspectos do gênero.</li>
+                </ul>
+              </div>
+
+              <div class="obra">
+                <strong>3. "Drácula" (1897) – Bram Stoker</strong>
+                <ul>
+                  <li> A obra mais icônica e influente da literatura vampírica.</li>
+                  <li>Introduz uma narrativa epistolar com múltiplos pontos de vista.</li>
+                  <li>Explora temas como sexualidade, ciência vs superstição e o medo do estrangeiro.</li>
+                </ul>
+              </div>
+
+              <div class="obra">
+                <strong>4. "Entrevista com o Vampiro" (1976) – Anne Rice</strong>
+                <ul>
+                  <li> Inaugura uma nova era do vampiro como personagem introspectivo e filosófico.</li>
+                  <li>Marcada pela sensualidade, melancolia e questionamentos existenciais.</li>
+                  <li>Abre caminho para a humanização do vampiro moderno.</li>
+                </ul>
+              </div>
+
+              <div class="obra">
+                <strong>5. "The Historian" (2005) – Elizabeth Kostova</strong>
+                <ul>
+                  <li> Romance que mescla história, mistério e vampirismo com erudição.</li>
+                  <li>Releitura contemporânea da lenda de Drácula com base em pesquisa documental.</li>
+                  <li>Narrativa densa e envolvente, cruzando gerações e continentes.</li>
+                </ul>
+              </div>
+
+              <div class="obra">
+                <strong>6. "Let the Right One In" (2004) – John Ajvide Lindqvist</strong>
+                <ul>
+                  <li> Romance sueco que atualiza o vampiro para os subúrbios modernos.</li>
+                  <li>Une horror psicológico com crítica social e questões de identidade.</li>
+                  <li>Foco na solidão, na infância e na violência latente do cotidiano.</li>
+                </ul>
+              </div>
+
+              <div class="obra">
+                <strong>7. "The Passage" (2010) – Justin Cronin</strong>
+                <ul>
+                  <li> Mistura vampirismo com ficção científica e distopia.</li>
+                  <li>Vampiros como resultado de experimentos genéticos — metáfora para o colapso social.</li>
+                  <li>Trilogia de grande impacto e complexidade narrativa.</li>
+                </ul>
+              </div>
+      </section>
+<hr>
+      <section id="cinema">
+      <h1>🎬 Vampiros no Cinema: Reflexos de Sangue na Tela</h1>
+
+      <p>O cinema desempenhou um papel essencial na consolidação do imaginário vampírico ao redor do mundo. Desde o início da sétima arte, essas criaturas noturnas fascinam o público com sua mistura de sedução, medo, imortalidade e tragédia.</p>
+      <p>A figura do vampiro no cinema passou por diversas fases: do horror expressionista ao romantismo gótico, da sátira ao thriller psicológico, refletindo sempre os temores e fantasias de cada geração. Os vampiros cinematográficos assumem formas monstruosas, elegantes, decadentes ou subversivas — adaptando-se às estéticas e temáticas de cada época.</p>
+      <p>Mais do que simples antagonistas, os vampiros nas telonas expressam conflitos sociais, tabus culturais e dilemas filosóficos sobre vida, morte, desejo e identidade. São personagens icônicos que desafiam o tempo — dentro e fora da tela.</p>
+
+        <figure>
+        <img src="ilust3.png" alt="Ilustração de uma vampiro e sua vitima" height="700" style="display: block; margin: 0 auto;"/>
+        <figcaption>Vampiro se deliciando com a sua vítima.</figcaption>
+        </figure>
+
+        <h2>🍿 Filmes Essenciais Sobre Vampiros</h2>
+
+          <div class="filme">
+            <strong>1. "Nosferatu" (1922) – F.W. Murnau</strong>
+            <ul>
+              <li> Clássico do expressionismo alemão.</li>
+              <li>Uma das primeiras adaptações de Drácula, com visual sombrio e linguagem simbólica.</li>
+              <li>Influenciou toda a estética do horror gótico no cinema.</li>
+            </ul>
+          </div>
+
+          <div class="filme">
+            <strong>2. "Horror de Drácula" (1958) – Terence Fisher</strong>
+            <ul>
+              <li> Filme da Hammer Films com Christopher Lee como um dos Dráculas mais marcantes.</li>
+              <li>Revolucionou o horror ao trazer mais erotismo e violência para o mito.</li>
+              <li>Estabeleceu o visual colorido e teatral do vampiro clássico.</li>
+            </ul>
+          </div>
+
+          <div class="filme">
+            <strong>3. "Garotos Perdidos" (1987) – Joel Schumacher</strong>
+            <ul>
+              <li> Vampiros adolescentes, rebeldes e sedutores nos anos 80.</li>
+              <li>Mescla humor, ação e estética punk com terror.</li>
+              <li>Virou referência da cultura pop e do vampiro urbano moderno.</li>
+            </ul>
+          </div>
+
+          <div class="filme">
+            <strong>4. "Drácula de Bram Stoker" (1992) – Francis Ford Coppola</strong>
+            <ul>
+              <li> Adaptação visualmente exuberante e fiel ao romance original.</li>
+              <li>Ressalta o erotismo, a paixão trágica e o horror psicológico.</li>
+              <li>Restaura a grandiosidade gótica do vampiro como figura trágica.</li>
+            </ul>
+          </div>
+
+          <div class="filme">
+            <strong>5. "Deixe Ela Entrar" (2008) – Tomas Alfredson</strong>
+            <ul>
+              <li> Drama sueco sensível e brutal sobre infância, solidão e monstros interiores.</li>
+              <li>Reinventa o mito com lirismo e horror contido.</li>
+              <li>Obra-prima da sutileza e do impacto emocional.</li>
+            </ul>
+          </div>
+
+          <div class="filme">
+            <strong>6. "A Sombra do Vampiro" (2000) – E. Elias Merhige</strong>
+            <ul>
+              <li> Filme metalinguístico sobre os bastidores de "Nosferatu".</li>
+              <li>Cria a hipótese de que o ator do filme original era um vampiro real.</li>
+              <li>Explora obsessão artística, loucura e a linha entre ficção e realidade.</li>
+            </ul>
+          </div>
+
+          <div class="filme">
+            <strong>7. "Deixe-me Entrar" (2010) – Matt Reeves</strong>
+            <ul>
+              <li> Refilmagem americana de "Deixe Ela Entrar", com sensibilidade semelhante.</li>
+              <li>Amplia o alcance do tema para o público ocidental, mantendo o tom sombrio.</li>
+              <li>Fortalece o vampiro como símbolo da infância quebrada e do afeto perigoso.</li>
+            </ul>
+          </div>
+              </section>
+<hr>
+      <section id="tv">
+             <h1>📺 Vampiros na Televisão: Imortalidade em Série</h1>
+
+              <p>Na televisão, os vampiros conquistaram espaço duradouro e diverso. Seja em narrativas dramáticas, séries adolescentes ou produções de horror sofisticado, essas figuras imortais mostraram sua capacidade de adaptação ao formato serializado e aos gostos de diferentes públicos.</p>
+              <p>As séries com temática vampírica costumam explorar temas como a dualidade moral, a eternidade como maldição, os laços de sangue (familiares e simbólicos) e os dilemas humanos vistos sob a ótica de seres que não pertencem totalmente ao mundo dos vivos nem dos mortos.</p>
+              <p>O formato televisivo permite acompanhar esses personagens ao longo de anos, aprofundando suas histórias, conflitos e transformações. Isso faz com que o vampiro na TV ganhe complexidade, carisma e, muitas vezes, um espaço de identificação com o público.</p>
+
+                      <figure>
+        <img src="ilust4.png" alt="Ilustração de uma vampira voando" height="700" style="display: block; margin: 0 auto;"/>
+        <figcaption>Vampira voando pela noite</figcaption>
+        </figure>
+
+              <h2>🦇 Séries de TV Essenciais Sobre Vampiros</h2>
+
+              <div class="serie">
+                <strong>1. "Buffy, a Caça-Vampiros" (1997–2003)</strong>
+                <ul>
+                  <li> Mistura terror adolescente, humor sarcástico e metáforas profundas sobre o amadurecimento.</li>
+                  <li>Transformou vampiros em ameaças e amantes ao mesmo tempo.</li>
+                  <li>Influenciou uma geração inteira de narrativas sobrenaturais.</li>
+                </ul>
+              </div>
+
+              <div class="serie">
+                <strong>2. "Angel" (1999–2004)</strong>
+                <ul>
+                  <li> Spin-off focado em um vampiro com alma e busca por redenção.</li>
+                  <li>Explora a culpa, o livre-arbítrio e o heroísmo em meio à escuridão.</li>
+                  <li>Tom mais sombrio e adulto que sua série de origem.</li>
+                </ul>
+              </div>
+
+              <div class="serie">
+                <strong>3. "True Blood" (2008–2014)</strong>
+                <ul>
+                  <li> Vampiros vivendo abertamente na sociedade após invenção de sangue sintético.</li>
+                  <li>Carregada de erotismo, política e crítica social.</li>
+                  <li>Reflete sobre preconceito, identidade e convivência entre espécies.</li>
+                </ul>
+              </div>
+
+              <div class="serie">
+                <strong>4. "The Vampire Diaries" (2009–2017)</strong>
+                <ul>
+                  <li> Sucesso entre o público jovem, com forte apelo romântico e sobrenatural.</li>
+                  <li>Explora triângulos amorosos, irmandade, imortalidade e dilemas morais.</li>
+                  <li>Deu origem a um universo expandido de séries derivadas.</li>
+                </ul>
+              </div>
+
+              <div class="serie">
+                <strong>5. "The Originals" (2013–2018)</strong>
+                <ul>
+                  <li> Spin-off focado em vampiros ancestrais e conflitos familiares.</li>
+                  <li>Aprofunda mitologias antigas e alianças com bruxas e lobisomens.</li>
+                  <li>Mais político e trágico em sua abordagem.</li>
+                </ul>
+              </div>
+
+              <div class="serie">
+                <strong>6. "Castlevania" (2017–2021)</strong>
+                <ul>
+                  <li> Animação adulta inspirada na famosa franquia de jogos.</li>
+                  <li>Explora guerras entre humanos, vampiros e monstros com narrativa madura.</li>
+                  <li>Estética sombria e complexidade emocional fazem dela uma obra cult.</li>
+                </ul>
+              </div>
+
+              <div class="serie">
+                <strong>7. "Midnight Mass" (2021)</strong>
+                <ul>
+                  <li> Minissérie intensa que une religião, fé, fanatismo e vampirismo.</li>
+                  <li>Aborda o vampiro como figura bíblica reinterpretada.</li>
+                  <li>Reflexão profunda sobre sacrifício, arrependimento e humanidade.</li>
+                </ul>
+              </div>
+      </section>
+    </main>
+        <aside class="anchors">
+                  <h2>Neste Artigo</h2>
+                  <ul>
+                    <li><a href="#ficcao">Vampiros na Ficção</a></li>
+                    <li><a href="#literatura">Literatura</a></li>
+                    <li><a href="#cinema">Cinema</a></li>
+                    <li><a href="#tv">Televisão</a></li>
+                  </ul>
+                </aside>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2025 — Sanguis Arcanum. Desenvolvido por Gustavo Arévalo-Rodrigues.</p>
+  </footer>
+</body>
+
+  
+</html>

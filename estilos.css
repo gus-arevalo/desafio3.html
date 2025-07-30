@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-right: 2px solid #ff3366; /* destaque lateral */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0; /* sidebar "gruda" no topo ao rolar */
+  height: 100vh; /* ocupa altura toda */
+  overflow-y: auto; /* scroll interno se precisar */
+}
+
+/* Links da sidebar */
+.sidebar a {
+  color: #ff99cc;
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #ff3366;      /* fundo rosa neon */
+  color: #fff;                    /* texto branco */
+  box-shadow: 0 0 10px #ff3366,   /* brilho externo */
+              0 0 20px #ff3366,
+              0 0 40px #ff3366;   /* efeito neon */
+  transform: scale(1.05);         /* cresce levemente */
+}
+
+header {
+  position: relative;
+  height: 270px;
+  background: #000 url('blood-drip.png') repeat-x top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+header img.logo {
+  position: relative;
+  z-index: 2;
+  height: 250px;
+}
+
+.drop {
+  position: absolute;
+  top: 100px;
+  background: #ff0000; /* vermelho sangue */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+figure figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ff99cc;       /* legenda em rosa */
+  font-style: italic;   /* deixa com estilo de legenda */
+}
+
+.bar {
+  height: 4px;
+  background-color: #e60073;
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+
+.main {
+  flex: 1; /* ocupa o restante do espaço */
+  padding: 100px;
+}
+
+h1, h2 {
+  color: #ff3366;
+}
+
+h3 {
+  color: #ff99cc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.serie, .filme, .obra {
+
+ margin-bottom: 20px;
+}
+
+figure {
+  text-align: center;   /* centraliza imagem + legenda */
+  margin: 20px auto;
+}
+
+figure img {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: #ff99cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: #ff3366;
+  margin: 40px 0;
+}
+
+.footer {
+  background-color: #000;
+  text-align: center;
+  padding: 15px;
+  color: #bbb;
+  margin-top: 30px;
+}
+
+
+    ul {
+      list-style-type: disc; /* mantém os bullets padrão redondos */
+      list-style-position: inside; /* coloca o bullet dentro do bloco */
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+.anchors {
+  width: 200px;
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+}
+
+.anchors a:hover {
+  background-color: #ff3366;      /* fundo rosa neon */
+  color: #fff;                    /* texto branco */
+  box-shadow: 0 0 10px #ff3366,   /* brilho externo */
+              0 0 20px #ff3366,
+              0 0 40px #ff3366;   /* efeito neon */
+  transform: scale(1.05);         /* cresce levemente */
+}
+
+aside {
+  margin-left: 20px;
+  background: #2a2a2a;
+  border-left: 2px solid #ff3366;
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content; /* só ocupa o necessário */
+  align-self: flex-start; /* fixa no topo da direita */
+}
